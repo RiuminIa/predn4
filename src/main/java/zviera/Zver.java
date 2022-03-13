@@ -1,4 +1,4 @@
-package Zviera;
+package zviera;
 
 public abstract class Zver implements Beh{
     protected String meno;

@@ -1,8 +1,8 @@
-import Kontakty.Abonent;
-import Kontakty.Kontakt;
-import Zviera.Macka;
-import Zviera.Pes;
-import Zviera.Zver;
+import kontakty.Abonent;
+import kontakty.Kontakt;
+import zviera.Macka;
+import zviera.Pes;
+import zviera.Zver;
 
 public class Main {
     public static void main(String[] args) {

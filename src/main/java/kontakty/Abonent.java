@@ -1,4 +1,4 @@
-package Kontakty;
+package kontakty;
 
 public class Abonent extends Kontakt{
     protected String titul;

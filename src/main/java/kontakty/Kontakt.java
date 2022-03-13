@@ -1,4 +1,4 @@
-package Kontakty;
+package kontakty;
 
 public class Kontakt {
     protected String meno;

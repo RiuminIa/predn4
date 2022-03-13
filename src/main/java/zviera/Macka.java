@@ -1,4 +1,4 @@
-package Zviera;
+package zviera;
 
 public class Macka extends Zver {
     public Macka(String name){

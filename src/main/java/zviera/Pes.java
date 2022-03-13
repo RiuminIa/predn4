@@ -1,4 +1,4 @@
-package Zviera;
+package zviera;
 
 public class Pes extends Zver implements Plavanie{
     public Pes(String name){
