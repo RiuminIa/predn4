@@ -2,7 +2,7 @@ package zviera;
 
 public class Macka extends Zver {
     public Macka(String name){
-        this.meno=name;
+       super(name);
     }
     @Override
     public void zvukZvera(){

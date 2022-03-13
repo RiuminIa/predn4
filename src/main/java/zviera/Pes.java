@@ -2,7 +2,7 @@ package zviera;
 
 public class Pes extends Zver implements Plavanie{
     public Pes(String name){
-        this.meno=name;
+        super(name);
     }
     @Override
     public void zvukZvera(){
