@@ -8,7 +8,7 @@ public class Abonent extends Kontakt{
     }
     @Override
     public String toString() {
-        return this.titul+" "+this.meno+" "+this.preizvisko;
+        return this.titul+" "+super.toString();
     }
 
 }

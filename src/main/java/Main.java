@@ -1,5 +1,8 @@
 import Kontakty.Abonent;
 import Kontakty.Kontakt;
+import Zviera.Macka;
+import Zviera.Pes;
+import Zviera.Zver;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,5 +19,13 @@ public class Main {
         System.out.println(pes);
         System.out.println(prednasa);
         System.out.println(perdun);
+
+
+        Zver maca=new Macka("Zoya");
+        Pes mops=new Pes("Perduha");
+        maca.zvukZvera();
+        maca.pohlad();
+        maca.behai();
+        mops.plavanie();
     }
 }
