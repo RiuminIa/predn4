@@ -4,6 +4,11 @@ import zviera.Macka;
 import zviera.Pes;
 import zviera.Zver;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Probnik prob= new Probnik();
@@ -27,5 +32,33 @@ public class Main {
         maca.pohlad();
         maca.behai();
         mops.plavanie();
+
+
+
+       ArrayList<Pes> listPsov=new ArrayList<Pes>();
+       listPsov.add(new Pes("Gav"));
+        listPsov.add(new Pes("Gaf"));
+        ArrayList<Macka> listMacek=new ArrayList<Macka>();
+        listMacek.add(new Macka("persik"));
+        listMacek.add(new Macka("dimok"));
+
+        ArrayList<Zver> zoopark=new ArrayList<Zver>();
+        zoopark.addAll(listPsov);
+        zoopark.addAll(listMacek);
+        System.out.println(zoopark.size());
+        Collections.shuffle(zoopark); //smesenie
+        zoopark.get(0).zvukZvera();
+        Collections.shuffle(zoopark);
+
+//        for(var i=0;i<zoopark.size();i++){
+//            zoopark.get(i).pohlad();
+//        }
+//        for(Zver zver:zoopark){
+//            zver.pohlad();
+//        }
+        var iterator=zoopark.iterator();
+        while (iterator.hasNext()){
+            iterator.next().pohlad();
+        }
     }
 }
