@@ -1,8 +1,6 @@
 import kontakty.Abonent;
 import kontakty.Kontakt;
-import zviera.Macka;
-import zviera.Pes;
-import zviera.Zver;
+import zviera.*;
 
 import java.util.*;
 
@@ -67,5 +65,37 @@ public class Main {
         ArrayList<Pes> list2=new ArrayList<>(psi);
         list2.add(new Pes("Gauc"));
         System.out.println(list2.size());
+//        for (int i=0;i<15000;i++){
+//            System.out.println(""+(i)+" "+(char)i);
+//        }
+        System.out.println("⟴"+"⌧"+"☐"+"☒"+"❌"+"\uD83D\uDCA7");
+
+
+        /**
+         * prednaska 5
+         */
+        ArrayList<Zver> zverek=new ArrayList<>();
+        zverek.add(new Macka("Myuricio"));
+        zverek.add(new Pes("Gavno"));
+        for (var zver:zverek){
+            try {
+                kontrola(zver);
+            }
+            catch (NotPesException | NotMackaEception e){
+                System.out.println(e.getMessage());
+                //break;
+            } finally {
+                System.out.println("Some ERROROROR");
+            }
+        }
+
+    }
+    private static void kontrola(Zver zvera) throws NotPesException, NotMackaEception {
+        if(zvera instanceof Pes){
+            throw new NotMackaEception( "ne macka");
+        }
+        else {
+            throw new NotPesException( "ne pes");
+        }
     }
 }
